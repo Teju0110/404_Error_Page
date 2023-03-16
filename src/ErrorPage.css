@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+
+
+.errorPage {
+  background-color: hsl(38, 80%, 80%);
+  padding: 50px;
+
+}
+
+.errorPageContainer {
+  background-color: hsl(38, 69%, 59%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.navBar {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.navBar_Items {
+  display: flex;
+}
+
+.navBar_Items h2 {
+  margin: 0px 20px;
+}
+
+.errorPage_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorPageContent p {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 80px;
+}
+
+.errorPageContent button {
+  height: 50px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.errorPageImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorPageImage img {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+  animation: floaty 1.5s infinite alternate;
+}
+
+.imgShadow {
+  width: 140px;
+  height: 20px;
+  background-color: rgb(130, 127, 127);
+  margin: 0 auto;
+  border-radius: 50%;
+  filter: blur(16px);
+  animation: shadow 1.8s infinite alternate;
+}
+
+.errorPageFooter {
+  margin-bottom: 10px;
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(.85, .85);
+  }
+}
+
+.navBarSmall_menu {
+  display: none;
+  width: 100%;
+}
+
+.navBarSmall_menuItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 150px;
+  padding: 20px;
+  background-color: black;
+  color: #DCCA87;
+  margin: 20px;
+}
+
+.navBarSmall_menuItems h2:hover {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+}
+
+.menuIcon {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .errorPage_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .errorPage_main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navBarSmall_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .errorPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .errorPageContent p {
+    text-align: center;
+    font-size: 50px;
+  }
+ 
+
+}
+
+@media screen and (max-width: 500px) { 
+
+  .errorPageContent h1 {
+    margin: 0px 50px;
+    font-size: 20px;
+  }
+ 
+
+}
